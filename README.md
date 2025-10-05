@@ -39,12 +39,21 @@ A weighted sum of these probabilities defines the **relative strength matrix** b
 
 ---
 
-### 2. Perron–Frobenius Ranking
+### 2. The Perron–Frobenius Theorem
 
-The matrix of pairwise win probabilities is treated as a **stochastic matrix**.  
-By iteratively applying it to an initial uniform vector, we obtain convergence (via the **Perron–Frobenius theorem**) toward the **dominant eigenvector**, which represents each player’s stationary strength.
+At the heart of this project lies a classical result from linear algebra — the **Perron–Frobenius theorem**, which ensures the convergence of a positive, primitive stochastic matrix toward a unique dominant eigenvector.
 
-This yields a **ranking independent from the ATP algorithm**, built solely from match data and probabilistic relationships.
+**Theorem (simplified):**
+
+> Let `A` be a positive and primitive square matrix of size `n`.  
+> Then there exists a unique positive eigenvalue `r = ρ(A)` (the spectral radius) such that:
+>
+> - `r` is simple (algebraic multiplicity 1)  
+> - There exists a unique positive vector `x₀` satisfying `A x₀ = r x₀` and `‖x₀‖₁ = 1`.
+
+In this project:
+- `A` represents the **transition matrix** describing the probability that player *i* beats player *j*.
+- The **dominant eigenvector** of `A` gives a stationary distribution of "strength" across all players.
 
 ---
 
