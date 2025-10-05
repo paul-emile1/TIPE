@@ -2,7 +2,7 @@
 
 **Author**: Paul-Emile Marcus  
 **Environment**: Python 3 (Google Colab)  
-**Keywords**: Graph theory, Linear algebra, Machine learning, Sports analytics, Random Forest, Perron–Frobenius theorem, Elo rating  
+**Keywords**: Linear algebra, Machine learning, Sports analytics, Random Forest, Perron–Frobenius theorem, Elo rating  
 
 ---
 
