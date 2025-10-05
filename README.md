@@ -49,8 +49,9 @@ This yields a **ranking independent from the ATP algorithm**, built solely from 
 ## ⚙️ Implementation
 
 ### Structure
-├── TIPE_spé_classement.ipynb # Ranking computation using Perron–Frobenius
-├── TIPE_spé_ML.ipynb # Machine learning model (Random Forest)
-├── data/ # Match datasets (not included)
-└── README.md # Project documentation
+├── TIPE_spé_classement.ipynb   # Ranking computation using Perron–Frobenius
+├── TIPE_spé_ML.ipynb           # Machine learning model (Random Forest)
+├── data/                       # Match datasets (not included)
+└── README.md                   # Project documentation
+
 
