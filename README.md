@@ -1,4 +1,4 @@
-# 🎾 Tennis Ranking & Match Prediction using Perron–Frobenius and Machine Learning
+# Tennis Ranking & Match Prediction using Perron–Frobenius and Machine Learning
 
 **Author**: Paul-Emile Marcus  
 **Environment**: Python 3 (Google Colab)  
@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 This project explores how **mathematical modeling** and **machine learning** can be used to analyze and predict tennis performance.  
 Originally developed as a **TIPE project (academic research in French preparatory classes)**, it was later restructured to serve as a **data science portfolio project**.
@@ -20,15 +20,13 @@ The work is divided into two main parts:
 
 ---
 
-## 🧩 Mathematical Background
+## Mathematical Background
 
 ### 1. From Elo to Relative Strength
 
 The Elo model defines the probability of player *A* defeating player *B* as:
 
-\[
-p(D) = \frac{1}{1 + 10^{-\frac{D}{400}}}
-\]
+p(D) = 1 / (1 + 10^(-D / 400))
 
 To capture more nuances, several parameters were combined:
 - **Elo differential** (`PELO`)
@@ -57,14 +55,15 @@ In this project:
 
 ---
 
-## ⚙️ Implementation
+## Implementation
+```
 TIPE-tennis-ranking/
 │
 ├── TIPE_spé_classement.ipynb # Ranking computation using Perron–Frobenius
 ├── TIPE_spé_ML.ipynb # Machine learning model (Random Forest)
 ├── data/ # Match datasets (not included)
 └── README.md # Project documentation
-
+```
 
 ### Environment
 
@@ -80,7 +79,7 @@ TIPE-tennis-ranking/
 
 ---
 
-## 🧮 Data Preprocessing
+## Data Preprocessing
 
 Data preprocessing includes:
 - Merging ATP match results from multiple tournaments.  
@@ -92,7 +91,7 @@ The resulting **transition matrix** represents the estimated probability that pl
 
 ---
 
-## 🌍 Ranking Algorithm
+## Ranking Algorithm
 
 1. Construct the transition matrix `A` of pairwise probabilities.  
 2. Initialize a positive vector `Y0` such that `||Y0||₁ = 1`.  
@@ -106,7 +105,7 @@ This process is guaranteed to converge by the **Perron–Frobenius theorem** for
 
 ---
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 
 Once the custom ranking was computed, it was integrated as a feature in a **binary classification** task predicting match outcomes.
 
@@ -117,7 +116,7 @@ Once the custom ranking was computed, it was integrated as a feature in a **bina
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Open the notebooks in Google Colab or locally:
 
