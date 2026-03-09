@@ -1,6 +1,6 @@
 # Tennis Ranking & Match Prediction using Perron–Frobenius and Machine Learning
 
-**Author**: Paul-Emile Marcus  
+**Author**: Paul-Emile Marcus, Théo Martin 
 **Environment**: Python 3 (Google Colab)  
 **Keywords**: Linear algebra, Machine learning, Sports analytics, Random Forest, Perron–Frobenius theorem, Elo rating  
 
